@@ -4,10 +4,13 @@ import UserList from './user_list'
 
 const App = React.createClass({
   render () {
+    let users = [
+      'Sato', 'Kato', 'Ito'
+    ]
     return (
-      <div>
+      <div className='app'>
         <Header />
-        <UserList />
+        <UserList list={users}/>
       </div>
     )
   }
